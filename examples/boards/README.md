@@ -14,7 +14,7 @@ How you write the board porting files, especially the `.dts` files depends on wh
     ```
     - here i'm passing the `stm32f4discovery.cfg` configuration since i'm using the stm32f407 board.
     - If openocd doesn't have a configuration for your board, the set up will be something like this:
-    ```bash
+    ```cmake
     board_runner_args(openocd "--config" "interface/your_interface.cfg" "--config" "target/your_target.cfg")
     ```
     - The target is the SoC you are targeting.
