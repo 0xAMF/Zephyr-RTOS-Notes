@@ -1,0 +1,15 @@
+/ {
+    aliases {
+	my-counter = &my_counter;
+    };
+};
+
+&timers2 {
+    status = "okay";
+    st,prescaler = <4000>;
+    my_counter: counter {
+        compatible = "st,stm32-counter";
+        status = "okay";
+    };
+};
+

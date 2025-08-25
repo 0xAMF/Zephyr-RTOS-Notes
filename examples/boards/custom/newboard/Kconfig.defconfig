@@ -1,0 +1,6 @@
+if BOARD_NEWBOARD
+
+config BOARD
+    default "newboard"
+
+endif # BOARD_NEWBOARD

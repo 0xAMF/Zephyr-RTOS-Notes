@@ -1,0 +1,6 @@
+config SAY_HELLO
+    bool "Print test to console"
+    default n
+    depends on PRINTK
+    help
+	adds say_hello() function to print "hello"

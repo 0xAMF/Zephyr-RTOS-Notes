@@ -1,0 +1,2 @@
+config BOARD_NEWBOARD
+    select SOC_STM32F407XG

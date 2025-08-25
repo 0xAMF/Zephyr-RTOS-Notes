@@ -1,0 +1,75 @@
+/dts-v1/;
+
+#include <st/f4/stm32f407Xg.dtsi>
+#include "newboard-pinctrl.dtsi"
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+    model = "New board corp. newboard";
+    compatible = "st,stm32f4discovery";
+
+
+    chosen {
+	zephyr,sram = &sram0;
+	zephyr,console = &usart2;
+	zephyr,shell-uart = &usart2;
+	zephyr,flash = &flash0;
+    };
+
+    aliases {
+	led0 = &blue_led_6;
+	sw0 = &user_button;
+    };
+
+
+    buttons {
+	compatible = "gpio-keys";
+
+	user_button: button {
+	    label = "User Button";
+	    gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
+	    zephyr,code = <INPUT_KEY_0>;
+	};
+    };
+
+    led {
+	compatible = "gpio-leds";
+	blue_led_6: led_0 {
+	    gpios = <&gpiod 15 GPIO_ACTIVE_HIGH>;
+	};
+    };
+};
+
+&usart2 {
+    status = "okay";
+    current-speed = <115200>;
+    pinctrl-0 = <&usart2_tx_pa2 &usart2_rx_pa3>;
+    pinctrl-names = "default";
+};
+
+
+&clk_hse {
+	clock-frequency = <8000000>;
+	status = "okay";
+};
+
+&pll {
+	div-m = <8>;
+	mul-n = <336>;
+	div-p = <2>;
+	div-q = <7>;
+	clocks = <&clk_hse>;
+	status = "okay";
+};
+
+&rcc {
+	clocks = <&pll>;
+	clock-frequency = <DT_FREQ_M(168)>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <4>;
+	apb2-prescaler = <2>;
+};
+
+&gpiod {
+    status = "okay";
+};

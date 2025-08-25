@@ -1,0 +1,11 @@
+description: custom button
+
+# compatiblity string that matches the one in the devicetree source 
+# and DT_DRV_COMPAT macr in the driver source code
+compatible: "custom,button"
+
+# define requried properties
+properties:
+  pin:
+    type: phandle
+    required: true

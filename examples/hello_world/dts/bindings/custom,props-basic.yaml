@@ -1,0 +1,8 @@
+description: Custom properties
+compatible: "custom,props-basic"
+
+properties:
+  int:
+    type: int
+  string:
+    type: string

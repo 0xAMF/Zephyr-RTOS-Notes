@@ -1,0 +1,15 @@
+#include <zephyr/dt-bindings/pinctrl/stm32-pinctrl.h>
+
+&pinctrl {
+    usart2_tx_pa2: usart2_tx_pa2 {
+        pinmux = <STM32_PINMUX('A', 2, AF7)>; /* USART2_TX */
+        bias-disable;
+        drive-push-pull;
+        slew-rate = "very-high-speed";
+    };
+
+    usart2_rx_pa3: usart2_rx_pa3 {
+        pinmux = <STM32_PINMUX('A', 3, AF7)>; /* USART2_RX */
+        bias-pull-up;
+    };
+};

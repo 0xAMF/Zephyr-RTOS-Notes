@@ -1,0 +1,32 @@
+/ {
+    aliases {
+	my-adc = &adc1;
+	my-adc-channel = &adc1_ch0;
+    };
+};
+
+
+&pinctrl {
+    adc1_ch0: adc1_ch0 {
+        pinmux = <STM32_PINMUX('A', 2, ANALOG)>; /* PA2 as ADC input */
+    };
+};
+
+&adc1 {
+    #address-cells = <1>;
+    #size-cells = <0>;
+    status = "okay";
+    pinctrl-0 = <&adc1_ch0>;
+    pinctrl-names = "default";
+    st,adc-prescaler = <4>;
+
+    adc1_ch0: channel@0 {
+        reg = <0>; /* channel number */
+        zephyr,gain = "ADC_GAIN_1_4";
+        zephyr,reference = "ADC_REF_INTERNAL";
+	zephyr,vref-mv = <3894>;
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,resolution = <12>;
+    };
+};
+
