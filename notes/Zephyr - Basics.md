@@ -94,7 +94,7 @@ west debug -d ./build
 ```
 ---
 ## Resources
-- [Practical Zephyr - Zephyr Basics (Part 1)](read://https_interrupt.memfault.com/?url=https%3A%2F%2Finterrupt.memfault.com%2Fblog%2Fpractical_zephyr_basics)
+- [Practical Zephyr - Zephyr Basics](read://https_interrupt.memfault.com/?url=https%3A%2F%2Finterrupt.memfault.com%2Fblog%2Fpractical_zephyr_basics)
 - [Installing the nRF Connect SDK](https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/installation/install_ncs.html#)
 - [Creating an application by hand - zephyr documentation](https://docs.zephyrproject.org/latest/develop/application/index.html#creating-an-application-by-hand)
 
