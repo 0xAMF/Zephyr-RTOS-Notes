@@ -364,7 +364,7 @@ int main(void)
 
 ---
 # Sources
-[Introduction to Zephyr Part 6: How to Write a Device Driver | DigiKey](https://www.youtube.com/watch?v=vXAg_UbEurc&list=PLEBQazB0HUyTmK2zdwhaf8bLwuEaDH-52&index=6&ab_channel=DigiKey)
-[How to Build Drivers for Zephyr | Interrupt](https://interrupt.memfault.com/blog/building-drivers-on-zephyr)
-[[Zephyr - Modules]]
+- [Introduction to Zephyr Part 6: How to Write a Device Driver | DigiKey](https://www.youtube.com/watch?v=vXAg_UbEurc&list=PLEBQazB0HUyTmK2zdwhaf8bLwuEaDH-52&index=6&ab_channel=DigiKey)
+- [How to Build Drivers for Zephyr | Interrupt](https://interrupt.memfault.com/blog/building-drivers-on-zephyr)
+
 #embedded #zephyr 

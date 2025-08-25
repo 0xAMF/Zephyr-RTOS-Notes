@@ -95,6 +95,7 @@ Whether an MCU uses centralized or distributed pin control does not necessarily 
 - In the **grouped approach** the vendor’s Devicetree sources do not provide nodes for all possible combinations. Instead, nodes containing the pin configuration are created either for the board or by the application, and pins are grouped by their configuration (e.g., pull resistors), thus the name “grouped”. The pin multiplexing may or may not be restricted and thus this approach is for both, distributed and centralized pin multiplexing. We’ll see this when we browse the [Nordic Devicetree source files in the next section](read://https_interrupt.memfault.com/?url=https%3A%2F%2Finterrupt.memfault.com%2Fblog%2Fpractical_zephyr_05_dt_practice#node-approach-with-the-stm32).
 
 ---
-[Practical Zephyr - Devicetree practice (Part 5) | Interrupt](https://interrupt.memfault.com/blog/practical_zephyr_05_dt_practice) 
-https://docs.zephyrproject.org/latest/hardware/pinctrl/index.html
+- [Practical Zephyr - Devicetree practice (Part 5) | Interrupt](https://interrupt.memfault.com/blog/practical_zephyr_05_dt_practice) 
+- [Zephyr - pinctrl](https://docs.zephyrproject.org/latest/hardware/pinctrl/index.html)
+
 #embedded #zephyr 

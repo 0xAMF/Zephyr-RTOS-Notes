@@ -264,5 +264,6 @@ The macro `DT_PATH` is a _variadic_ macro that allows retrieving a node’s 
 Using the [node identifiers](read://https_interrupt.memfault.com/?url=https%3A%2F%2Finterrupt.memfault.com%2Fblog%2Fpractical_zephyr_dt_semantics#node-identifiers) and the property’s name in the “lowercase-and-underscores” form, we can access the property’s value using the macro `DT_PROP`. The macro is very straight-forward since all it needs to do is paste the node ID, separated by `_P_` with the provided property name.
 
 ---
-[Practical Zephyr - Devicetree semantics (Part 4) | Interrupt](https://interrupt.memfault.com/blog/practical_zephyr_dt_semantics)
+- [Practical Zephyr - Devicetree semantics (Part 4) | Interrupt](https://interrupt.memfault.com/blog/practical_zephyr_dt_semantics)
+
 #embedded #zephyr 

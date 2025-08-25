@@ -237,6 +237,6 @@ include(${ZEPHYR_BASE}/boards/common/pyocd.board.cmake)
 This example configures the `nrfutil`, `nrfjprog`, `jlink`, and `pyocd` runners.
 
 ---
-[Board Porting Guide — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/hardware/porting/board_porting.html)
-[[Zephyr - Device Tree Basics]]
+- [Board Porting Guide — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/hardware/porting/board_porting.html)
+
 #embedded #zephyr 

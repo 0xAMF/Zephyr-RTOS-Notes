@@ -491,9 +491,9 @@ We can also find an example of a **64-bit architecture** in Zephyr’s DTS fil
 ```
 ---
 
-[Practical Zephyr - Devicetree basics (Part 3) | Interrupt](https://interrupt.memfault.com/blog/practical_zephyr_dt)
-[Device Tree Specifications](https://www.devicetree.org/specifications/)
-[Zephyr - Device Tree Documentation](https://docs.zephyrproject.org/latest/build/dts/index.html)
-[[Zephyr - Device Tree Semantics]]
-[Zephyr Development Summit - Devicetrees](https://www.youtube.com/watch?v=w8GgP3h0M8M&list=PLzRQULb6-ipFDwFONbHu-Qb305hJR7ICe)
+- [Practical Zephyr - Devicetree basics (Part 3) | Interrupt](https://interrupt.memfault.com/blog/practical_zephyr_dt)
+- [Device Tree Specifications](https://www.devicetree.org/specifications/)
+- [Zephyr - Device Tree Documentation](https://docs.zephyrproject.org/latest/build/dts/index.html)
+- [Zephyr Development Summit - Devicetrees](https://www.youtube.com/watch?v=w8GgP3h0M8M&list=PLzRQULb6-ipFDwFONbHu-Qb305hJR7ICe)
+
 #embedded #zephyr #linux 

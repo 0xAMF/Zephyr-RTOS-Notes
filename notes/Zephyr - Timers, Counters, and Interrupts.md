@@ -378,6 +378,7 @@ int main(void)
 - Here we connect the ISR to the interrupt source, first we initialize the callback struct using the `gpio_init_callback()` function.
 - Then we add the callback using `gpio_add_callback()` function.
 ---
-[Timers — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/kernel/services/timing/timers.html)
-[Zephyr API Documentation: Counter Interface](https://docs.zephyrproject.org/latest/doxygen/html/group__counter__interface.html)
+- [Timers — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/kernel/services/timing/timers.html)
+- [Zephyr API Documentation: Counter Interface](https://docs.zephyrproject.org/latest/doxygen/html/group__counter__interface.html)
+
 #embedded #zephyr

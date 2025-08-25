@@ -25,5 +25,6 @@
 	- The project has a vibrant and active community, which provides documentation, tutorials, forums, and mailing lists.
 	
 ---
-[Why We Moved from FreeRTOS to Zephyr RTOS – Zephyr Project](https://www.zephyrproject.org/why-we-moved-from-freertos-to-zephyr-rtos/)
+- [Why We Moved from FreeRTOS to Zephyr RTOS – Zephyr Project](https://www.zephyrproject.org/why-we-moved-from-freertos-to-zephyr-rtos/)
+
 #zephyr #embedded 

@@ -245,7 +245,8 @@ This header file contains the configured value of the `USR_FUN` symbol as a ma
 ```
 
 ---
-[zephyr project - kconfig](https://docs.zephyrproject.org/latest/build/kconfig/index.html#configuration-system-kconfig)
-[Practical Zephyr - Kconfig (Part 2) | Interrupt](https://interrupt.memfault.com/blog/practical_zephyr_kconfig)
-[linux kernel - kconfig language](https://www.kernel.org/doc/html/latest/kbuild/kconfig-language.html)
+- [zephyr project - kconfig](https://docs.zephyrproject.org/latest/build/kconfig/index.html#configuration-system-kconfig)
+- [Practical Zephyr - Kconfig (Part 2) | Interrupt](https://interrupt.memfault.com/blog/practical_zephyr_kconfig)
+- [linux kernel - kconfig language](https://www.kernel.org/doc/html/latest/kbuild/kconfig-language.html)
+
 #embedded #zephyr #linux 
