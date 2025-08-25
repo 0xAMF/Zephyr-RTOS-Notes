@@ -1,12 +1,12 @@
-## 1. [[Zephyr - Basics]]
-## 2. [[Zephyr - Kconfig]]
-## 3. [[Zephyr - Device Tree Basics]]
-## 4. [[Zephyr - Device Tree Semantics]]
-## 5. [[Zephyr - Device Tree Practice]]
-## 6. [[Zephyr - ADC]]
-## 7. [[Zephyr - Modules]]
-## 8. [[Zephyr - Writing Drivers]]
-## 9. [[Zephyr - Multithreading]]
-## 10. [[Zephyr - Timers, Counters, and Interrupts]]
-## 11. [[Zephyr - Custom Board Support]]
-## 12. [[Zephyr - West Workspaces]]
+## 1. [Basics](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Basics.md)
+## 2. [Kconfig](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Kconfig.md)
+## 3. [Device Tree Basics](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Device%20Tree%20Basics.md)
+## 4. [Device Tree Semantics](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Device%20Tree%20Semantics.md)
+## 5. [Device Tree Practice](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Device%20Tree%20Practice.md)
+## 6. [ADC](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20ADC.md)
+## 7. [Modules](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Modules.md)
+## 8. [Writing Device Drivers](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Writing%20Drivers.md)
+## 9. [Multithreading](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Multithreading.md)
+## 10. [Timers, Counters, and Interrupts](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Timers%2C%20Counters%2C%20and%20Interrupts.md)
+## 11. [Custom Board Support](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20Custom%20Board%20Support.md)
+## 12. [West Workspaces](https://github.com/0xAMF/Zephyr-RTOS-Notes/blob/main/Zephyr%20-%20West%20Workspaces.md)
