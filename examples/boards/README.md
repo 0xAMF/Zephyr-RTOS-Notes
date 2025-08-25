@@ -1,5 +1,5 @@
 ## Creating Custom Board For Different Architectures
-How you write the board porting files, especially the `.dts` files depends on what the SoC requires, so if you want to port a board different than that one i used in this example (stm32f407 discovery), search for boards that use the same SoC as the board you want to support.
+How you write the board porting files, especially the `.dts` files depends on what the SoC requires, so if you want to port a board different than the one i used in this example (stm32f407 discovery), search for boards that use the same SoC as the board you want to support.
 
 ### Notes on Porting ARM and STM32 Boards
 - Since the stm32f4 is based on ARM Cortex-M4, we have to look for boards that use the same architecture to get an idea on how to set things up.
