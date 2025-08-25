@@ -32,7 +32,7 @@
 #### Running Freestanding Applications (outside the zephyr directory)
 To make things easier, `cd` into the zephyr repo in your local machine and run the following commands:
 ```bash
-west build /path/to/app -b <board_name> -p always
+west build /path/to/app -d /path/to/app/build -b <board_name> -p always
 west flash /path/to/app/build
 ```
 - This works because the environment variables required to build a zephyr application already exist inside the zephyr project, you can add these variables to your `.bashrc` but it didn't work for me.
@@ -40,8 +40,8 @@ west flash /path/to/app/build
 
 If you are working with qemu, run using the following command:
 ```bash
-west build /path/to/app -b <board_name> -p always
-west build /path/to/build -t run
+west build /path/to/app -d /path/to/app/build -b <board_name> -p always
+west build /path/to/app/build -t run
 ```
 - You don't have to pass in the build directory when running if you are inside the application where the build lives.
 
