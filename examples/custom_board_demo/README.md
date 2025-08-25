@@ -6,3 +6,9 @@ set(BOARD_ROOT <board-root-directory>)
 ```
 - replace `<board-root-directory>` with the parent directory where the `boards` directory lives.
 - **IMPORTANT**: your custom board configurations has to be inside a `boards` directory.
+
+### Build and Flash
+```bash
+west build /path/to/app/ -d /path/to/app/build -b newboard --pristine
+west flash /path/to/app/build
+```

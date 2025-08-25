@@ -20,4 +20,4 @@ How you write the board porting files, especially the `.dts` files depends on wh
     - The target is the SoC you are targeting.
     - The interface is the hardware debugger your are using.
 
-
+### Building and Running
