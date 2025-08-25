@@ -7,6 +7,7 @@ int main(void)
     while (1)
     {
 	printk("Hello, World\r\n");
+	k_msleep(1000);
     }
     return 0;
 }
