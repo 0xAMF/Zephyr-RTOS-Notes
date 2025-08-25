@@ -9,7 +9,6 @@
 - [Device Tree Basics](./notes/Zephyr%20-%20Device%20Tree%20Basics.md)
 - [Device Tree Semantics](./notes/Zephyr%20-%20Device%20Tree%20Semantics.md)
 - [Device Tree Practice](./notes/Zephyr%20-%20Device%20Tree%20Practice.md)
-  - **Example**: [DT Practice](https://github.com/0xAMF/Zephyr-RTOS-Notes/tree/main/examples/dt_practice) 
 
 ### Core Features
 - [ADC](./notes/Zephyr%20-%20ADC.md)
