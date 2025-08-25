@@ -6,7 +6,7 @@
 The board is described using the board name + revision and qualifiers. If a board contains a single core SoC, we can use the board's name only, we don't need qualifiers.
 - Formally this can also be seen as `board name[@revision][/board qualifiers]`, which can be extended to `board name[@revision][/SoC[/CPU cluster][/variant]]`.
 *Example:*
-![board_naming.png](./board_naming.png)
+![board_naming.png](board_naming.png)
 ## Adding Board Support
 You should first check if the SoC on your board is supported from [Supported Boards and Shields — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/boards/index.html#boards=).
 - If not supported, see [Architecture Porting Guide — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/hardware/porting/arch.html#architecture-porting-guide).

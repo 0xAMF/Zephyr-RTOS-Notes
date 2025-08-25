@@ -2,7 +2,7 @@
 >  the _Devicetree_ is a tree data structure you provide to describe your hardware. Each _node_ describes one _device_, e.g., the UART peripheral that we used for logging via `printk` . Except for the root note, each node has exactly one parent, thus the term _device tree_.
 
 We we build our project using `west`, zephyr detects the device tree of our target board automatically, we can see that in the logs:
-![[Pasted image 20250731175406.png]]
+![build_out.png](build_out.png)
 When we take a look at our board device tree we see something like:
 ```c
 #include <mem.h>

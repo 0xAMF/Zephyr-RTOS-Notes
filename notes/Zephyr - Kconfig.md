@@ -75,12 +75,12 @@ west build --build-dir ../build -t menuconfig
 west build --build-dir ../build -t guiconfig
 ```
 if we run the `menuconfig` command we will get a TUI that looks like this:
-![[Pasted image 20250730141929.png]]
+![menuconf_1.png](menuconf_1.png)
 to search for a symbol we use `/`.
-![[Pasted image 20250730142013.png]]
+![menuconf_2.png](menuconf_2.png)
 after searching for `PRINTK` we can find it with `-*-`, that means we can't change because it depends on other symbol.
 If we press `?` we can see the details of the symbol.
-![[Pasted image 20250730142138.png]]
+![menuconf_3.png](menuconf_3.png)
 We can see that the symbol `NCS_BOOT_BANNER` is `y` selecting this symbol, that is why we when we set our `PRINTK` to `n` nothing happened.
 **Notice:** If you did not build your project or the build system cannot build the required targets due to CMake/Kconfig processing issues, the tool will not load since the `zephyr/.config` file is missing.
 ## Build Types and Alternative Kconfig Files
@@ -149,7 +149,7 @@ west build --board <board> \
   -t hardenconfig
 ```
 Output:
-![[Pasted image 20250730205742.png]]
+![hardenconf.png](hardenconf.png)
 ## Custom Kconfig Symbols
 CMake automatically detects a `Kconfig` file if it is placed in the same directory of the application’s `CMakeLists.txt`, and that is what we’ll use for our own configuration file.
 Basic `Kconfig` file for a custom symbol:
