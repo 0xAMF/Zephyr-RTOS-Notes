@@ -38,6 +38,7 @@ west flash /path/to/app/build
 ```
 - This works because the environment variables required to build a zephyr application already exist inside the zephyr project, you can add these variables to your `.bashrc` but it didn't work for me.
 - The other way is to create your application as a west workspace, check notes on west workspaces for more details.
+
 If you are working with qemu, run using the following command:
 ```bash
 west build /path/to/app -b <board_name> -p always
