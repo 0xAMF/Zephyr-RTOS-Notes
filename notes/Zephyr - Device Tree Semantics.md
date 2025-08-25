@@ -246,7 +246,7 @@ Zephyr provides the `DT_ALIAS` macro to get a node’s identifier via its alia
 #define NODE_PROPS_ALIAS_BY_PATH    DT_ALIAS(alias_by_path)
 #define NODE_PROPS_ALIAS_BY_STRING  DT_ALIAS(alias_as_string)
 ```
-![[Pasted image 20250802143237.png]]
+![node_id.png](./images/node_id.png)
 This leaves us with node labels and retrieving a node’s identifier by its path. Zephyr provides the two macros `DT_NODELABEL` and `DT_PATH` for this:
 ```C
 // Node identifier by label.
