@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20.0)
 
-set(BOARD_ROOT /home/fyd/embedded/)
+set(BOARD_ROOT <board-root-directory>)
 
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
