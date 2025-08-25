@@ -30,6 +30,21 @@
   - **Example**: [Custom Support For STM32F4 Discovery Board](https://github.com/0xAMF/Zephyr-RTOS-Notes/tree/main/examples/boards) 
 - [West Workspaces](./notes/Zephyr%20-%20West%20Workspaces.md)
 
+#### Running Freestanding Applications (outside the zephyr directory)
+To make things easier, `cd` into the zephyr repo in your local machine and run the following commands:
+```bash
+west build /path/to/app -b <board_name> -p always
+west flash /path/to/app/build
+```
+- This works because the environment variables required to build a zephyr application already exist inside the zephyr project, you can add these variables to your `.bashrc` but it didn't work for me.
+- The other way is to create your application as a west workspace, check notes on west workspaces for more details.
+If you are working with qemu, run using the following command:
+```bash
+west build /path/to/app -b <board_name> -p always
+west build /path/to/build -t run
+```
+- You don't have to pass in the build directory when running if you are inside the application where the build lives.
+
 ---
 
 ## Resources
