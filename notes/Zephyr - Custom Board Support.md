@@ -116,7 +116,7 @@ boards:
 ...
 ```
 ### Writing The Board's Devicetree
-`<board>.dts` generally will look this:
+`<board>.dts` generally will look like this:
 ```C
 /dts-v1/;
 #include <your_soc_vendor/your_soc.dtsi>
