@@ -239,7 +239,9 @@ project(adc_demo)
 
 target_sources(app PRIVATE src/main.c)
 ```
+
 ---
+# References
 - [Analog-to-Digital Converter (ADC) — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/hardware/peripherals/adc.html)
 - [Introduction to Zephyr Part 5: Devicetree Bindings | DigiKey](https://www.youtube.com/watch?v=nL1kZ3kPyo0&list=PLEBQazB0HUyTmK2zdwhaf8bLwuEaDH-52&index=5&ab_channel=DigiKey)
 

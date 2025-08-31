@@ -237,6 +237,10 @@ include(${ZEPHYR_BASE}/boards/common/pyocd.board.cmake)
 ```
 This example configures the `nrfutil`, `nrfjprog`, `jlink`, and `pyocd` runners.
 
+## Supported SoCs in Zephyr
+Zephyr is primarily an **RTOS for microcontrollers (MCUs)**: Cortex-M0/M3/M4/M7/M23/M33, RISC-V, ARC, etc.
+- It **only recently expanded** into some **Cortex-A cores** (A9, A53, A72, etc.), mainly to target **heterogeneous SoCs** (big Cortex-A core for Linux + small Cortex-M core for RTOS).
+That's why some of the boards based on application processors like BeagleBone Black, Raspberry pi, and jetson nano have no board support in zephyr.
 ---
 - [Board Porting Guide — Zephyr Project Documentation](https://docs.zephyrproject.org/latest/hardware/porting/board_porting.html)
 
