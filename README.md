@@ -29,6 +29,10 @@
   - **Example**: [Custom Support For STM32F4 Discovery Board](https://github.com/0xAMF/Zephyr-RTOS-Notes/tree/main/examples/boards) 
 - [West Workspaces](./notes/Zephyr%20-%20West%20Workspaces.md)
 
+### Extras
+- [Board Simulation Using Renode](./notes/Board%20Simulation%20Using%20Renode.md)
+- [OpenOCD](./notes/OpenOCD.md)
+
 #### Running Freestanding Applications (outside the zephyr directory)
 To make things easier, `cd` into the zephyr repo in your local machine and run the following commands:
 ```bash
