@@ -52,7 +52,7 @@ west build /path/to/app/build -t run
 ---
 
 ## Resources
-- [Zephyr RTOS Official Documentation](https://docs.zephyrproject.org/latest/)  
-- [Zephyr GitHub Repository](https://github.com/zephyrproject-rtos/zephyr)  
-- [Practical Zephyr Series](https://interrupt.memfault.com/tags#practical-zephyr-series)
-- [Introduction To Zephry: DigiKey](https://www.youtube.com/playlist?list=PLEBQazB0HUyTmK2zdwhaf8bLwuEaDH-52)
+1. [Practical Zephyr Series](https://interrupt.memfault.com/tags#practical-zephyr-series)
+2. [Introduction To Zephyr: DigiKey](https://www.youtube.com/playlist?list=PLEBQazB0HUyTmK2zdwhaf8bLwuEaDH-52)
+3. [Zephyr RTOS Official Documentation](https://docs.zephyrproject.org/latest/)  
+4. [Zephyr GitHub Repository](https://github.com/zephyrproject-rtos/zephyr)  
