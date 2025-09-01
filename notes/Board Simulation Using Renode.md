@@ -46,7 +46,7 @@ showAnalyzer sysbus.usart2
 ```bash
 start
 ```
-![[Pasted image 20250901110920.png]]
+![renode_simulation.png](./images/renode_simulation.png)
 ---
 [Installing Renode - Renode - documentation](https://renode.readthedocs.io/en/latest/introduction/installing.html)
 [Renode - documentation](https://renode.readthedocs.io/en/latest/index.html)
