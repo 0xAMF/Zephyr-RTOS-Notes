@@ -17,8 +17,7 @@ Scripts can be constructed by combining commands, in turn scripts can include bo
 - When running Renode interactively, the user would normally start with creating the emulation through a sequence of commands building up, configuring, and connecting the relevant emulated (guest) platform or platforms (called “machines”).
 - This is normally done using nested `.resc` scripts, which help encapsulate some of the repeatable elements in this activity.
 - A script can be loaded with the include command, for example: `include @/path/to/script.resc`
-### Example: Simulation of `stm32f407 discovery` Board
-
+### Example 1: Simulation of `stm32f407 discovery` Board
 1. Creating the machine
 ```bash
 mach create
@@ -48,8 +47,44 @@ start
 ```
 ![renode_simulation.png](./images/renode_simulation.png)
 
----
+### Example 2: Simulation of the `stm32f746g-discovery` board screen
+![stm32f7_disco.png](./images/stm32f7_disco.png)
+STM32 boards uses the LTDC peripheral for the display, and the LTDC is a component that Renode has support for, including specific models for certain STM32 microcontrollers.
+First we are going to build the LVGL zephyr sample for our board.
+```bash
+west build -b stm32f746g_disco samples/subsys/display/lvgl --pristine
+```
+Now we have our `zephyr.elf` under `./build/zephyr/zephyr.elf`
+Next we are going to run `renode` and create our machine.
+```
+mach create "stm32f7"
+```
+Then load `.repl` for the `stm32f7_discovery` board.
+```bash
+machine LoadPlatformDescription @platforms/boards/stm32f7_discovery-bb.repl
+```
+After that we specify the frame rate for our virtual display.
+```bash
+ltdc FramesPerVirtualSecond 100
+```
+- As mentioned before `ltdc` is the display controller for the STM32 boards.
+```bash
+showAnalyzer usart1
+showAnalyzer ltdc
+```
+- Show the output of `usart1` and the `ltdc` display controller.
+Then we load the `zephyr.elf` that contains the graphics example we compiler from the zephyr repo examples.
+```
+sysbus LoadELF @/path/to/build/zephyr/zephyr.elf
+```
+Finally we run the simulation
+```bash
+start
+```
+![renode_graphics.png](./images/renode_graphics.png)
 
+---
+- [Embedded CI on Steroids with Zephyr & Renode // Zephyr Tech Talk #003](https://www.youtube.com/watch?v=hBODmrYUzV0&t=2s&ab_channel=TheZephyrProject)
 - [Installing Renode - Renode - documentation](https://renode.readthedocs.io/en/latest/introduction/installing.html)
 - [Renode - documentation](https://renode.readthedocs.io/en/latest/index.html)
 - [Zephyr RTOS Embedded C Programming - Andrew Eliasz](https://link.springer.com/content/pdf/10.1007/979-8-8688-0107-5.pdf)
