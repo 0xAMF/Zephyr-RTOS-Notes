@@ -47,7 +47,9 @@ showAnalyzer sysbus.usart2
 start
 ```
 ![renode_simulation.png](./images/renode_simulation.png)
+
 ---
-[Installing Renode - Renode - documentation](https://renode.readthedocs.io/en/latest/introduction/installing.html)
-[Renode - documentation](https://renode.readthedocs.io/en/latest/index.html)
-[Zephyr RTOS Embedded C Programming - Andrew Eliasz](https://link.springer.com/content/pdf/10.1007/979-8-8688-0107-5.pdf)
+
+- [Installing Renode - Renode - documentation](https://renode.readthedocs.io/en/latest/introduction/installing.html)
+- [Renode - documentation](https://renode.readthedocs.io/en/latest/index.html)
+- [Zephyr RTOS Embedded C Programming - Andrew Eliasz](https://link.springer.com/content/pdf/10.1007/979-8-8688-0107-5.pdf)
